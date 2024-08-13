@@ -1,0 +1,54 @@
+@import "../../styles/responsive.scss";
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .icon {
+      @include sm {
+        display: none;
+      }
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .logoutBtn {
+      background-color: red;
+      color: white;
+      padding: 7px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      cursor: pointer;
+      &:hover {
+        background-color: tomato;
+        transition: 1s ease;
+      }
+    }
+  }
+}

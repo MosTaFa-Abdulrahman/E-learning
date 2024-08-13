@@ -1,0 +1,173 @@
+@import "../../styles/responsive.scss";
+
+.new_footer_top {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  padding: 120px 0px 270px 100px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.colums {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+
+  @include md {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left,
+  .middle,
+  .right {
+    // flex: 1;
+    // padding: 20px;
+
+    @include sm {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+
+  .left {
+    h2 {
+      margin-bottom: 20px;
+    }
+    .linksContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .link {
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #5e2ced;
+      }
+    }
+  }
+
+  .middle {
+    h2 {
+      margin-bottom: 20px;
+    }
+    .middleLinksContainer {
+      .titleContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .title {
+          font-weight: bold;
+        }
+      }
+      .mobileContainer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 5px;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+          cursor: pointer;
+        }
+        .myNumber {
+          font-size: 15px;
+        }
+      }
+    }
+    .link {
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+    .iconsContainer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      .icon {
+        font-size: 24px;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #5e2ced;
+        }
+      }
+    }
+  }
+}
+
+.new_footer_top .footer_bg {
+  position: absolute;
+  bottom: 0;
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png")
+    no-repeat scroll center 0;
+  width: 100%;
+  height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia0PYPxwT5ifToyP3SNZeQWfJEWrUENYA5IXM6sN5vLwAKvaJS1pQVu8mOFFUa_ET4JuHNTFAxKURFerJYHDUWXLXl1vDofYXuij45JZelYOjEFoCOn7E6Vxu0fwV7ACPzArcno1rYuVxGB7JY6G7__e4_KZW4lTYIaHSLVaVLzklZBLZnQw047oq5-Q/s16000/volks.gif")
+    no-repeat center center;
+  width: 330px;
+  height: 105px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  -webkit-animation: myfirst 22s linear infinite;
+  animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif")
+    no-repeat center center;
+  width: 88px;
+  height: 100px;
+  background-size: 100%;
+  bottom: 0;
+  left: 38%;
+  position: absolute;
+  -webkit-animation: myfirst 30s linear infinite;
+  animation: myfirst 30s linear infinite;
+}
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}

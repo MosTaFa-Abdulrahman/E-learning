@@ -1,0 +1,68 @@
+.quiz-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  margin-top: 60px;
+
+  .timer {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .questions {
+    flex: 1;
+    overflow-y: auto;
+
+    .question-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 20px;
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0;
+
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .submit-quiz-btn {
+    align-self: flex-end;
+    background: #28a745;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: #218838;
+    }
+  }
+}
+
+.completed-message {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa; // Light background for better contrast
+  color: #dc3545; // Red color for error message
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+}

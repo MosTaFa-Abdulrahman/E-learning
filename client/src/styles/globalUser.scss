@@ -1,0 +1,58 @@
+@import "./variables.scss";
+@import "./responsive.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  padding: 0;
+}
+
+header,
+footer {
+  width: 100%;
+  padding: 10px 0;
+
+  @include sm {
+    padding: 5px 0;
+  }
+  @include md {
+    padding: 8px 0;
+  }
+}
+
+.user-content {
+  width: 100%;
+  padding: 0; // Remove any padding
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+
+  @include sm {
+    padding: 0;
+  }
+  @include md {
+    padding: 0;
+  }
+  @include lg {
+    padding: 0;
+  }
+  @include xl {
+    padding: 0;
+  }
+  @include xxl {
+    padding: 0;
+  }
+}

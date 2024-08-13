@@ -1,0 +1,129 @@
+.backgroundImage {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 223, 186, 1) 0%,
+    rgba(186, 239, 255, 1) 100%
+  );
+
+  margin-top: 70px;
+}
+
+/* Profile container styling */
+.profile {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  // background: white; /* Background color for the profile section */
+  // border-radius: 10px; /* Optional: rounded corners for better look */
+  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .profile-pic {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    .edit-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 10px;
+
+      input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    }
+
+    .submit-btn {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+
+  .profile-details,
+  .profile-section {
+    margin-bottom: 20px;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .profile-pic {
+        margin-bottom: 10px;
+      }
+
+      .edit-btn {
+        margin-top: 10px;
+      }
+    }
+  }
+}
